@@ -61,3 +61,10 @@ Fraction operator- (const Fraction& f)
 	}
 	return Fraction(a, z);
 }
+
+bool operator== (const Fraction& f1, const Fraction& f2)
+{
+	int a = f1._numerator * f2._denominator;
+	int b = f1._denominator * f2._numerator;
+	return a == b; 
+}

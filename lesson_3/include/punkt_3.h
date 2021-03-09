@@ -29,5 +29,6 @@ class Fraction
 		friend Fraction operator/ (const Fraction& f1, const Fraction& f2);
 		friend Fraction operator* (const Fraction& f1, const Fraction& f2);
 		friend Fraction operator- (const Fraction& f);
+		friend bool operator== (const Fraction& f1, const Fraction& f2);
 
 };

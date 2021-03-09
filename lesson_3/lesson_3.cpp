@@ -38,16 +38,15 @@ int main()
     std::cout << "Result (/) = " << fsum.getResult() << " or " << fsum.get_sResult() << std::endl;
     fsum = f1 * f2;
     std::cout << "Result (*) = " << fsum.getResult() << " or " << fsum.get_sResult() << std::endl;
-
     fsum = -f1;
     std::cout << "Result (u-) = " << fsum.getResult() << " or " << fsum.get_sResult() << std::endl;
+    std::cout << "Result (==) = " << (f1 == f2 ? "true" : "false") << std::endl;
+
 
 
     /*std::cout << fsum.getNumerator() << std::endl;
-    std::cout << fsum.getDenominator() << std::endl;*/
-    
+    std::cout << fsum.getDenominator() << std::endl;*/    
     
     return 0;
-
 }
 
