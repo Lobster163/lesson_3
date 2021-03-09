@@ -22,3 +22,31 @@ Fraction operator+ (const Fraction& f1, const Fraction& f2)
 	return result;
 }
 
+Fraction operator- (const Fraction& f1, const Fraction& f2)
+{
+	uint32_t z = f1._denominator * f2._denominator;
+	uint32_t a = f2._denominator * f1._numerator;
+	uint32_t b = f1._denominator * f2._numerator;
+	Fraction result = Fraction(a - b, z);
+	result._result = (double)result._numerator / (double)result._denominator;
+	return result;
+}
+
+Fraction operator/ (const Fraction& f1, const Fraction& f2)
+{
+	uint32_t z = f1._denominator * f2._numerator;
+	uint32_t a = f1._numerator * f2._denominator;
+	Fraction result = Fraction(a, z);
+	result._result = (double)result._numerator / (double)result._denominator;
+	return result;
+}
+
+Fraction operator* (const Fraction& f1, const Fraction& f2)
+{
+	uint32_t z = f1._denominator * f2._denominator;
+	uint32_t a = f1._numerator * f2._numerator;
+	Fraction result = Fraction(a, z);
+	result._result = (double)result._numerator / (double)result._denominator;
+	return result;
+}
+
