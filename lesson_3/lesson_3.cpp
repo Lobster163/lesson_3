@@ -41,6 +41,7 @@ int main()
     fsum = -f1;
     std::cout << "Result (u-) = " << fsum.getResult() << " or " << fsum.get_sResult() << std::endl;
     std::cout << "Result (==) = " << (f1 == f2 ? "true" : "false") << std::endl;
+    std::cout << "Result (!=) = " << (f1 != f2 ? "true" : "false") << std::endl;
 
 
 

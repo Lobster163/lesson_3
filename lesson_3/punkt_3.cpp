@@ -68,3 +68,8 @@ bool operator== (const Fraction& f1, const Fraction& f2)
 	int b = f1._denominator * f2._numerator;
 	return a == b; 
 }
+
+bool operator!= (const Fraction& f1, const Fraction& f2)
+{
+	return !(f1 == f2);
+}
