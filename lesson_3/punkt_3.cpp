@@ -1,6 +1,5 @@
 #include "include/punkt_3.h"
 
-
 Fraction::Fraction(int numerator, int denominator) : _numerator(numerator)
 {
 	if (denominator > 0)

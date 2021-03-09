@@ -48,10 +48,6 @@ int main()
     std::cout << "Result (>=) = " << (f1 >= f2 ? "true" : "false") << std::endl;
     std::cout << "Result (<=) = " << (f1 <= f2 ? "true" : "false") << std::endl;
 
-
-    /*std::cout << fsum.getNumerator() << std::endl;
-    std::cout << fsum.getDenominator() << std::endl;*/    
-
     Card* card_1 = new Card(ValueCard::_A, Suit::clubs);
     std::cout << "Tuz = " << card_1->GetValue() << std::endl;
     std::cout << "TitleFlip = " << card_1->Flip() << std::endl;
