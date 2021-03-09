@@ -145,12 +145,14 @@
     <ClCompile Include="punkt_1.cpp" />
     <ClCompile Include="punkt_2.cpp" />
     <ClCompile Include="punkt_3.cpp" />
+    <ClCompile Include="punkt_4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\lesson_3.h" />
     <ClInclude Include="include\punkt_1.h" />
     <ClInclude Include="include\punkt_2.h" />
     <ClInclude Include="include\punkt_3.h" />
+    <ClInclude Include="include\punkt_4.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

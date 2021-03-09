@@ -51,6 +51,12 @@ int main()
 
     /*std::cout << fsum.getNumerator() << std::endl;
     std::cout << fsum.getDenominator() << std::endl;*/    
+
+    Card* card = new Card();
+    std::cout << "Tuz = " <<card->GetValue(ValueCard::_A) << std::endl;
+    std::cout << "King = " << card->GetValue(ValueCard::_K) << std::endl;
+
+    delete card;
     
     return 0;
 }
