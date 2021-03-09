@@ -1,5 +1,7 @@
 ﻿#include "include/lesson_3.h"
+/*
 
+*/
 
 int main()
 {
