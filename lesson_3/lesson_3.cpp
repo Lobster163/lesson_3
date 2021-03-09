@@ -26,5 +26,16 @@ int main()
 
     car = new Minivan("Gazel", "next");
     delete car;
+
+    std::cout << std::endl << "P3" << std::endl;
+    Fraction f1(7, 2);
+    Fraction f2(9, 3);
+    Fraction fsum = f1 + f2;
+    /*std::cout << fsum.getNumerator() << std::endl;
+    std::cout << fsum.getDenominator() << std::endl;*/
+    std::cout << "Result = " << fsum.getResult() << std::endl;
+    
+    return 0;
+
 }
 
