@@ -69,7 +69,40 @@ bool operator== (const Fraction& f1, const Fraction& f2)
 	return a == b; 
 }
 
-bool operator!= (const Fraction& f1, const Fraction& f2)
+bool operator!= (const Fraction& f1, const Fraction& f2){ return !(f1 == f2); }
+
+bool operator< (const Fraction& f1, const Fraction& f2)
 {
-	return !(f1 == f2);
+	if (f1 == f2)
+		return false;
+	if (f1._denominator == f2._denominator)
+		return f1._numerator < f2._numerator;
+
+	int a = f1._numerator * f2._denominator;
+	int b = f2._numerator * f1._denominator;
+	return a < b;
+}
+
+bool operator> (const Fraction& f1, const Fraction& f2) 
+{ 
+	if (f1 != f2)
+		return !(f1 < f2);
+	else
+		return false;
+}
+
+bool operator>= (const Fraction& f1, const Fraction& f2)
+{
+	if (f1 != f2)
+		return f1 > f2;
+	else
+		return true;
+}
+
+bool operator<= (const Fraction& f1, const Fraction& f2)
+{
+	if (f1 != f2)
+		return f1 < f2;
+	else
+		return true;
 }
