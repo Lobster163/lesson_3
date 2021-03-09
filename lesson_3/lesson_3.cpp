@@ -31,9 +31,19 @@ int main()
     Fraction f1(7, 2);
     Fraction f2(9, 3);
     Fraction fsum = f1 + f2;
+    std::cout << "Result (+) = " << fsum.getResult() << " or "<< fsum.get_sResult() << std::endl;
+    fsum = f1 - f2;
+    std::cout << "Result (-) = " << fsum.getResult() << " or " << fsum.get_sResult() << std::endl;
+    fsum = f1 / f2;
+    std::cout << "Result (/) = " << fsum.getResult() << " or " << fsum.get_sResult() << std::endl;
+    fsum = f1 * f2;
+    std::cout << "Result (*) = " << fsum.getResult() << " or " << fsum.get_sResult() << std::endl;
+
+    fsum = f1;
+    std::cout << "Result (u-) = " << fsum.getResult() << " or " << fsum.get_sResult() << std::endl;
     /*std::cout << fsum.getNumerator() << std::endl;
     std::cout << fsum.getDenominator() << std::endl;*/
-    std::cout << "Result = " << fsum.getResult() << std::endl;
+    
     
     return 0;
 
