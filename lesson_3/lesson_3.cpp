@@ -39,8 +39,10 @@ int main()
     fsum = f1 * f2;
     std::cout << "Result (*) = " << fsum.getResult() << " or " << fsum.get_sResult() << std::endl;
 
-    fsum = f1;
+    fsum = -f1;
     std::cout << "Result (u-) = " << fsum.getResult() << " or " << fsum.get_sResult() << std::endl;
+
+
     /*std::cout << fsum.getNumerator() << std::endl;
     std::cout << fsum.getDenominator() << std::endl;*/
     

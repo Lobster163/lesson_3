@@ -13,13 +13,13 @@ using namespace std;
 class Fraction
 {
 	private:
-		uint32_t _numerator;
-		uint32_t _denominator = 1;
+		int _numerator;
+		int _denominator = 1;
 		double _result;
 		string _sResult;
 	public:
 		Fraction() : _numerator(0), _denominator(1), _result(0), _sResult("") {};
-		Fraction(uint32_t numerator, uint32_t denominator = 1);
+		Fraction(int numerator, int denominator = 1);
 		double getResult();
 		string get_sResult();
 		uint32_t getDenominator();
@@ -28,5 +28,6 @@ class Fraction
 		friend Fraction operator- (const Fraction& f1, const Fraction& f2);
 		friend Fraction operator/ (const Fraction& f1, const Fraction& f2);
 		friend Fraction operator* (const Fraction& f1, const Fraction& f2);
+		friend Fraction operator- (const Fraction& f);
 
 };
