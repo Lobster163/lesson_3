@@ -52,11 +52,17 @@ int main()
     /*std::cout << fsum.getNumerator() << std::endl;
     std::cout << fsum.getDenominator() << std::endl;*/    
 
-    Card* card = new Card();
-    std::cout << "Tuz = " <<card->GetValue(ValueCard::_A) << std::endl;
-    std::cout << "King = " << card->GetValue(ValueCard::_K) << std::endl;
+    Card* card_1 = new Card(ValueCard::_A, Suit::clubs);
+    std::cout << "Tuz = " << card_1->GetValue() << std::endl;
+    std::cout << "TitleFlip = " << card_1->Flip() << std::endl;
+    std::cout << "TitleFlip = " << card_1->Flip() << std::endl;
+    std::cout << "TitleFlip = " << card_1->Flip() << std::endl;
+    delete card_1;
 
-    delete card;
+    card_1 = new Card(ValueCard::_8, Suit::clubs);
+    std::cout << "Tuz = " << card_1->GetValue() << std::endl;
+    std::cout << "TitleFlip = " << card_1->Flip() << std::endl;
+    delete card_1;
     
     return 0;
 }

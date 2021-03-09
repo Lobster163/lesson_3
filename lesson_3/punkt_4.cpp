@@ -1,6 +1,12 @@
 #include "include/punkt_4.h"
 
-int Card::GetValue(ValueCard valCard)
+bool Card::Flip()
 {
-	return  (int)valCard;
+	_titleCard = !_titleCard;
+	return _titleCard;
+}
+
+int Card::GetValue()
+{
+	return (int)_valueCard;
 }

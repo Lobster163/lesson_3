@@ -31,11 +31,13 @@ enum class ValueCard
 class Card
 {
 	private:
-		Suit suit;
-		ValueCard valueCard;
-		bool titleCard;
+		Suit _suit;
+		ValueCard _valueCard;
+		bool _titleCard;
 	public:
-		void Flip();
-		int GetValue(ValueCard valCard);
+		Card() : _suit(Suit::clubs), _valueCard(ValueCard::_2), _titleCard(false) {};
+		Card(ValueCard valueCard, Suit suit) : _valueCard(valueCard), _suit(suit), _titleCard(false) {};
+		bool Flip();
+		int GetValue();
 
 };
